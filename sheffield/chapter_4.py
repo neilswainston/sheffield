@@ -1,7 +1,5 @@
 '''
-Created on 6 Jun 2018
-
-@author: neilswainston
+Sheffield
 '''
 import sys
 
@@ -21,7 +19,7 @@ def prelim_analysis(filename):
     model.reactions.BIO029.objective_coefficient = 1
     _fix_glucose_maximise(model, 0, 'Max biomass and mAb, glc_uptake = 0')
     _fix_glucose_maximise(model, 1, 'Max biomass and mAb, glc_uptake = 1')
-    _fix_glucose_maximise(model, 10, 'Max biomass and mAb, glc_uptake = 1')
+    _fix_glucose_maximise(model, 10, 'Max biomass and mAb, glc_uptake = 10')
 
     # Print components required for biomass and mAb production:
     _print_reaction(model, 'BIO028')
@@ -64,9 +62,9 @@ def blocked_reactions(filename):
 
     print 'Roll of L-Aspartyl-tRNA(Asn) in biomass production'
     model.metabolites.C06113.summary(names=False)
+    print
     print 'R03647\t' + model.reactions.R03647.build_reaction_string(
         use_metabolite_names=True)
-    print
     print
 
     print 'Roll of L-Glutamyl-tRNA(Gln) in biomass production'
