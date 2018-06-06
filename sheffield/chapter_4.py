@@ -131,7 +131,9 @@ def _set_bounds(model, reaction_ids, lower_bound, upper_bound):
 
 def _get_model(filename):
     '''Get "fresh" model.'''
-    return cobra.io.read_sbml_model(filename)
+    model = cobra.io.read_sbml_model(filename)
+    model.reactions.BIO028.objective_coefficient = 1
+    return model
 
 
 def main(args):
