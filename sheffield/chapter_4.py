@@ -12,12 +12,14 @@ from cobra.flux_analysis import flux_variability_analysis
 def prelim_analysis(filename):
     model = _get_model(filename)
 
-    # Fix glucose uptake to 1 and maximise:
+    # Fix glucose uptake to 0, 1, 10 and maximise:
+    _fix_glucose_maximise(model, 0, 'Max biomass, glc_uptake = 0')
     _fix_glucose_maximise(model, 1, 'Max biomass, glc_uptake = 1')
     _fix_glucose_maximise(model, 10, 'Max biomass, glc_uptake = 10')
 
     # Add mAb production to objective function and maximise:
     model.reactions.BIO029.objective_coefficient = 1
+    _fix_glucose_maximise(model, 0, 'Max biomass and mAb, glc_uptake = 0')
     _fix_glucose_maximise(model, 1, 'Max biomass and mAb, glc_uptake = 1')
     _fix_glucose_maximise(model, 10, 'Max biomass and mAb, glc_uptake = 1')
 
@@ -62,18 +64,21 @@ def blocked_reactions(filename):
 
     print 'Roll of L-Aspartyl-tRNA(Asn) in biomass production'
     model.metabolites.C06113.summary(names=False)
-    print model.reactions.R03647.build_reaction_string(
+    print 'R03647\t' + model.reactions.R03647.build_reaction_string(
         use_metabolite_names=True)
+    print
     print
 
     print 'Roll of L-Glutamyl-tRNA(Gln) in biomass production'
     model.metabolites.C06112.summary(names=False)
-    print model.reactions.R03651.build_reaction_string(
+    print
+    print 'R03651\t' + model.reactions.R03651.build_reaction_string(
         use_metabolite_names=True)
     print
 
 
-def _fix_glucose_maximise(model, glc_bound, title, print_result=True):
+def _fix_glucose_maximise(model, glc_bound, title,
+                          names=True, print_result=True):
     '''Fix glucose uptake flux and maximise.'''
     # Fix glucose uptake to glc_bound:
     glc_transport = model.reactions.EF0001
@@ -81,13 +86,15 @@ def _fix_glucose_maximise(model, glc_bound, title, print_result=True):
     glc_transport.upper_bound = glc_bound
 
     # Optimise:
-    model.optimize()
+    solution = model.optimize()
 
     if print_result:
         # Print result:
         print title
-        model.summary()
+        model.summary(names=names)
         print
+
+        solution.fluxes.to_csv(title + '.csv')
 
 
 def _print_reaction(model, reaction_id):
