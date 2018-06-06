@@ -56,8 +56,24 @@ def blocked_reactions(filename):
     _fix_glucose_maximise(model, 1, 'Max biomass, glc_uptake = 1, ' +
                           'Fix alanine and glutamate transport')
 
+    # Investigate the roll of charged tRNA in biomass production:
+    model = _get_model(filename)
+    _fix_glucose_maximise(model, 1, None, print_result=False)
 
-def _fix_glucose_maximise(model, glc_bound, title):
+    print 'Roll of L-Aspartyl-tRNA(Asn) in biomass production'
+    model.metabolites.C06113.summary(names=False)
+    print model.reactions.R03647.build_reaction_string(
+        use_metabolite_names=True)
+    print
+
+    print 'Roll of L-Glutamyl-tRNA(Gln) in biomass production'
+    model.metabolites.C06112.summary(names=False)
+    print model.reactions.R03651.build_reaction_string(
+        use_metabolite_names=True)
+    print
+
+
+def _fix_glucose_maximise(model, glc_bound, title, print_result=True):
     '''Fix glucose uptake flux and maximise.'''
     # Fix glucose uptake to glc_bound:
     glc_transport = model.reactions.EF0001
@@ -67,10 +83,11 @@ def _fix_glucose_maximise(model, glc_bound, title):
     # Optimise:
     model.optimize()
 
-    # Print result:
-    print title
-    model.summary()
-    print
+    if print_result:
+        # Print result:
+        print title
+        model.summary()
+        print
 
 
 def _print_reaction(model, reaction_id):
