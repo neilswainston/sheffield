@@ -6,7 +6,9 @@
       <compartment id="Cytosol" outside="Extracellular" />
       <compartment id="Mitochondria" outside="Cytosol" />
     </listOfCompartments>
-    <listOfSpecies>
+
+
+	<listOfSpecies>
       <species id="C00001" name="H2O" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00001_ext" name="H2O_ext" compartment="Extracellular" charge="0" boundaryCondition="true" />
       <species id="C00001_mt" name="H2O_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
@@ -2187,7 +2189,8 @@
       <species id="G13043" name="G13043" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="G13044" name="G13044" compartment="Cytosol" charge="0" boundaryCondition="false" />
     </listOfSpecies>
-    <listOfReactions>
+
+     <listOfReactions>
       <reaction id="EF0001" name="Glucose transporter" reversible="false">
         <notes>
           <html:listOfGenes />
@@ -2212,7 +2215,7 @@
           <speciesReference species="C00009" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="EF0003" name="CO2 diffusion" reversible="true">
+      <reaction id="EF0003" name="CO2 diffusion" reversible="false">
         <notes>
           <html:listOfGenes />
         </notes>
@@ -2223,7 +2226,7 @@
           <speciesReference species="C00011_ext" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="EF0004" name="Lactate transporter" reversible="true">
+      <reaction id="EF0004" name="Lactate transporter" reversible="false">
         <notes>
           <html:listOfGenes />
         </notes>
@@ -2234,7 +2237,7 @@
           <speciesReference species="C00186_ext" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="EF0005" name="O2 diffusion" reversible="true">
+      <reaction id="EF0005" name="O2 diffusion" reversible="false">
         <notes>
           <html:listOfGenes />
         </notes>
@@ -2311,7 +2314,7 @@
           <speciesReference species="C00065" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="EF0012" name="Ammonia transporter" reversible="true">
+      <reaction id="EF0012" name="Ammonia transporter" reversible="false">
         <notes>
           <html:listOfGenes />
         </notes>
@@ -2873,7 +2876,7 @@
           <speciesReference species="C02984" stoichiometry="0.0365" />
           <speciesReference species="C03402" stoichiometry="0.0449" />
           <speciesReference species="C02987" stoichiometry="0.0518" />
-          <speciesReference species="C02282" stoichiometry="0.04" />
+          <speciesReference species="C02282" stoichiometry="0.04"/>
           <speciesReference species="C02412" stoichiometry="0.066" />
           <speciesReference species="C02702" stoichiometry="0.0717" />
           <speciesReference species="C02553" stoichiometry="0.1064" />
@@ -2889,7 +2892,7 @@
           <speciesReference species="C02839" stoichiometry="0.0288" />
           <speciesReference species="C03512" stoichiometry="0.0224" />
           <speciesReference species="C02988" stoichiometry="0.0229" />
-          <speciesReference species="C00002" stoichiometry="4.3" />
+          <speciesReference species="C00002" stoichiometry="4.3"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="C_MAB" stoichiometry="1.0" />
@@ -3023,48 +3026,8 @@
           <speciesReference species="C02163_mt" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R03647" name="L-Aspartate:tRNAAsp ligase (AMP-forming)" reversible="false">
-        <notes>
-          <html:listOfGenes>
-            <html:p>ID: Dars</html:p>
-            <html:p>NAME: aspartyl-tRNA synthetase</html:p>
-            <html:p>MMU: 226414</html:p>
-            <html:p>EC: 6.1.1.12</html:p>
-            <html:p>UNIPROT: Q922B2</html:p>
-          </html:listOfGenes>
-        </notes>
-        <listOfReactants>
-          <speciesReference species="C00002" stoichiometry="1.0" />
-          <speciesReference species="C00049" stoichiometry="1.0" />
-          <speciesReference species="C01637" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="C00020" stoichiometry="1.0" />
-          <speciesReference species="C00013" stoichiometry="1.0" />
-          <speciesReference species="C06113" stoichiometry="1.0" />
-        </listOfProducts>
-      </reaction>
-      <reaction id="R03647_mt" name="L-Aspartate:tRNAAsp ligase (AMP-forming)" reversible="false">
-        <notes>
-          <html:listOfGenes>
-            <html:p>ID: Dars2</html:p>
-            <html:p>NAME: aspartyl-tRNA synthetase 2 (mitochondrial)</html:p>
-            <html:p>MMU: 226539</html:p>
-            <html:p>EC: 6.1.1.12</html:p>
-            <html:p>UNIPROT: Q8BIP0</html:p>
-          </html:listOfGenes>
-        </notes>
-        <listOfReactants>
-          <speciesReference species="C00002_mt" stoichiometry="1.0" />
-          <speciesReference species="C00049_mt" stoichiometry="1.0" />
-          <speciesReference species="C01637_mt" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="C00020_mt" stoichiometry="1.0" />
-          <speciesReference species="C00013_mt" stoichiometry="1.0" />
-          <speciesReference species="C06113_mt" stoichiometry="1.0" />
-        </listOfProducts>
-      </reaction>
+      
+      
       <reaction id="R03648" name="L-Asparagine:tRNA(Asn) ligase (AMP-forming)" reversible="false">
         <notes>
           <html:listOfGenes>
@@ -3111,48 +3074,8 @@
           <speciesReference species="C03125" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R03651_mt" name="L-Glutamate:tRNA(Gln) ligase (AMP-forming)" reversible="false">
-        <notes>
-          <html:listOfGenes>
-            <html:p>ID: Ears2</html:p>
-            <html:p>NAME: RIKEN cDNA 3230401I01 gene</html:p>
-            <html:p>MMU: 67417</html:p>
-            <html:p>EC: 6.1.1.17</html:p>
-            <html:p>UNIPROT: Q9CXJ1</html:p>
-          </html:listOfGenes>
-        </notes>
-        <listOfReactants>
-          <speciesReference species="C00002_mt" stoichiometry="1.0" />
-          <speciesReference species="C00025_mt" stoichiometry="1.0" />
-          <speciesReference species="C01640_mt" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="C00020_mt" stoichiometry="1.0" />
-          <speciesReference species="C00013_mt" stoichiometry="1.0" />
-          <speciesReference species="C06112_mt" stoichiometry="1.0" />
-        </listOfProducts>
-      </reaction>
-      <reaction id="R03651" name="L-Glutamate:tRNA(Gln) ligase (AMP-forming)" reversible="false">
-        <notes>
-          <html:listOfGenes>
-            <html:p>ID: Eprs</html:p>
-            <html:p>NAME: glutamyl-prolyl-tRNA synthetase</html:p>
-            <html:p>MMU: 107508</html:p>
-            <html:p>EC: 6.1.1.15 6.1.1.17</html:p>
-            <html:p>UNIPROT: Q8CGC7</html:p>
-          </html:listOfGenes>
-        </notes>
-        <listOfReactants>
-          <speciesReference species="C00002" stoichiometry="1.0" />
-          <speciesReference species="C00025" stoichiometry="1.0" />
-          <speciesReference species="C01640" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="C00020" stoichiometry="1.0" />
-          <speciesReference species="C00013" stoichiometry="1.0" />
-          <speciesReference species="C06112" stoichiometry="1.0" />
-        </listOfProducts>
-      </reaction>
+      
+      
       <reaction id="R03652" name="L-Glutamine:tRNA(Gln) ligase (AMP-forming)" reversible="false">
         <notes>
           <html:listOfGenes>
@@ -3640,50 +3563,8 @@
           <speciesReference species="C00020" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R04212_mt" name="Asp-tRNA(Asn):L-glutamine amido-ligase (ADP-forming)" reversible="false">
-        <notes>
-          <html:listOfGenes>
-            <html:p>ID: Pet112l</html:p>
-            <html:p>NAME: PET112-like (yeast)</html:p>
-            <html:p>MMU: 229487</html:p>
-            <html:p>EC: 6.3.5.-</html:p>
-            <html:p>UNIPROT: Q99JT1</html:p>
-          </html:listOfGenes>
-        </notes>
-        <listOfReactants>
-          <speciesReference species="C06113_mt" stoichiometry="1.0" />
-          <speciesReference species="C00064_mt" stoichiometry="1.0" />
-          <speciesReference species="C00002_mt" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="C03402_mt" stoichiometry="1.0" />
-          <speciesReference species="C00025_mt" stoichiometry="1.0" />
-          <speciesReference species="C00009_mt" stoichiometry="1.0" />
-          <speciesReference species="C00008_mt" stoichiometry="1.0" />
-        </listOfProducts>
-      </reaction>
-      <reaction id="R03905_mt" name="Glu-tRNA(Gln):L-glutamine amido-ligase(ADP-forming)" reversible="false">
-        <notes>
-          <html:listOfGenes>
-            <html:p>ID: Pet112l</html:p>
-            <html:p>NAME: PET112-like (yeast)</html:p>
-            <html:p>MMU: 229487</html:p>
-            <html:p>EC: 6.3.5.-</html:p>
-            <html:p>UNIPROT: Q99JT1</html:p>
-          </html:listOfGenes>
-        </notes>
-        <listOfReactants>
-          <speciesReference species="C06112_mt" stoichiometry="1.0" />
-          <speciesReference species="C00064_mt" stoichiometry="1.0" />
-          <speciesReference species="C00002_mt" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="C02282_mt" stoichiometry="1.0" />
-          <speciesReference species="C00025_mt" stoichiometry="1.0" />
-          <speciesReference species="C00009_mt" stoichiometry="1.0" />
-          <speciesReference species="C00008_mt" stoichiometry="1.0" />
-        </listOfProducts>
-      </reaction>
+      
+      
       <reaction id="R04773_mt" name="Selenomethionine:tRNAMet ligase (AMP-forming)" reversible="false">
         <notes>
           <html:listOfGenes>
@@ -7717,7 +7598,7 @@
           <speciesReference species="C00037" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00375" name="Deoxyadenosine 5'-triphosphate:DNA deoxynucleotidyltransferase" reversible="true">
+      <reaction id="R00375" name="Deoxyadenosine 5'-triphosphate:DNA deoxynucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pola1</html:p>
@@ -7791,7 +7672,7 @@
           <speciesReference species="C00039" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00376" name="Deoxyguanosine 5'-triphosphate:DNA deoxynucleotidyltransferase" reversible="true">
+      <reaction id="R00376" name="Deoxyguanosine 5'-triphosphate:DNA deoxynucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pola1</html:p>
@@ -7865,7 +7746,7 @@
           <speciesReference species="C00039" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00377" name="Deoxycytidine triphosphate:DNA deoxynucleotidyltransferase" reversible="true">
+      <reaction id="R00377" name="Deoxycytidine triphosphate:DNA deoxynucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pola1</html:p>
@@ -7939,7 +7820,7 @@
           <speciesReference species="C00039" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00378" name="Thymidine triphosphate:DNA deoxynucleotidyltransferase" reversible="true">
+      <reaction id="R00378" name="Thymidine triphosphate:DNA deoxynucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pola1</html:p>
@@ -8024,14 +7905,14 @@
           </html:listOfGenes>
         </notes>
         <listOfReactants>
-          <speciesReference species="C00002_mt" stoichiometry="1.0" />
-          <speciesReference species="C00042_mt" stoichiometry="1.0" />
-          <speciesReference species="C00010_mt" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
           <speciesReference species="C00008_mt" stoichiometry="1.0" />
           <speciesReference species="C00009_mt" stoichiometry="1.0" />
           <speciesReference species="C00091_mt" stoichiometry="1.0" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00002_mt" stoichiometry="1.0" />
+          <speciesReference species="C00042_mt" stoichiometry="1.0" />
+          <speciesReference species="C00010_mt" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
       <reaction id="R00410" name="Succinyl-CoA:3-oxo-acid CoA-transferase" reversible="true">
@@ -8307,14 +8188,14 @@
           </html:listOfGenes>
         </notes>
         <listOfReactants>
-          <speciesReference species="C00044" stoichiometry="1.0" />
-          <speciesReference species="C00042" stoichiometry="1.0" />
-          <speciesReference species="C00010" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
           <speciesReference species="C00035" stoichiometry="1.0" />
           <speciesReference species="C00009" stoichiometry="1.0" />
           <speciesReference species="C00091" stoichiometry="1.0" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00044" stoichiometry="1.0" />
+          <speciesReference species="C00042" stoichiometry="1.0" />
+          <speciesReference species="C00010" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
       <reaction id="R00432_mt" name="Succinate:CoA ligase (GDP-forming)" reversible="true">
@@ -8328,14 +8209,14 @@
           </html:listOfGenes>
         </notes>
         <listOfReactants>
-          <speciesReference species="C00044_mt" stoichiometry="1.0" />
-          <speciesReference species="C00042_mt" stoichiometry="1.0" />
-          <speciesReference species="C00010_mt" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
           <speciesReference species="C00035_mt" stoichiometry="1.0" />
           <speciesReference species="C00009_mt" stoichiometry="1.0" />
           <speciesReference species="C00091_mt" stoichiometry="1.0" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00044_mt" stoichiometry="1.0" />
+          <speciesReference species="C00042_mt" stoichiometry="1.0" />
+          <speciesReference species="C00010_mt" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
       <reaction id="R00434" name="GTP pyrophosphate-lyase (cyclizing)" reversible="false">
@@ -8566,7 +8447,7 @@
           <speciesReference species="C00046" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00437_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="true">
+      <reaction id="R00437_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pnpt1</html:p>
@@ -8585,7 +8466,7 @@
           <speciesReference species="C00008_mt" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00438_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="true">
+      <reaction id="R00438_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pnpt1</html:p>
@@ -8604,7 +8485,7 @@
           <speciesReference species="C00015_mt" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00439_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="true">
+      <reaction id="R00439_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pnpt1</html:p>
@@ -8623,7 +8504,7 @@
           <speciesReference species="C00035_mt" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00440_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="true">
+      <reaction id="R00440_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pnpt1</html:p>
@@ -11820,7 +11701,7 @@
           <speciesReference species="C00009_mt" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00875" name="D-Glucitol:NAD+ 2-oxidoreductase" reversible="true">
+      <reaction id="R00875" name="D-Glucitol:NAD+ 2-oxidoreductase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Sord</html:p>
@@ -15897,11 +15778,12 @@
           </html:listOfGenes>
         </notes>
         <listOfReactants>
-          <speciesReference species="C00422" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
           <speciesReference species="C00116" stoichiometry="1.0" />
           <speciesReference species="C00162" stoichiometry="1.0" />
+        </listOfReactants>
+        <listOfProducts>
+<speciesReference species="C00422" stoichiometry="1.0" />
+          
         </listOfProducts>
       </reaction>
       <reaction id="R01351" name="Glycerol-ester acylhydrolase" reversible="false">
@@ -18375,7 +18257,7 @@
           <speciesReference species="C00668" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R01787" name="alpha-D-Glucose:NADP+ 1-oxidoreductase" reversible="true">
+      <reaction id="R01787" name="alpha-D-Glucose:NADP+ 1-oxidoreductase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Akr1b3</html:p>
@@ -18416,12 +18298,12 @@
           </html:listOfGenes>
         </notes>
         <listOfReactants>
-          <speciesReference species="C00668" stoichiometry="1.0" />
-          <speciesReference species="C00001" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
           <speciesReference species="C00267" stoichiometry="1.0" />
           <speciesReference species="C00009" stoichiometry="1.0" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00668" stoichiometry="1.0" />
+          <speciesReference species="C00001" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
       <reaction id="R01791" name="Dextrin 6-alpha-D-glucanohydrolase" reversible="false">
@@ -19478,12 +19360,15 @@
           </html:listOfGenes>
         </notes>
         <listOfReactants>
-          <speciesReference species="C00311" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
           <speciesReference species="C00417" stoichiometry="1.0" />
           <speciesReference species="C00001" stoichiometry="1.0" />
-        </listOfProducts>
+
+
+        </listOfReactants>
+        <listOfProducts>
+<speciesReference species="C00311" stoichiometry="1.0" />
+          
+                  </listOfProducts>
       </reaction>
       <reaction id="R01900_mt" name="isocitrate hydro-lyase" reversible="true">
         <notes>
@@ -19496,11 +19381,12 @@
           </html:listOfGenes>
         </notes>
         <listOfReactants>
-          <speciesReference species="C00311_mt" stoichiometry="1.0" />
+<speciesReference species="C00417_mt" stoichiometry="1.0" />
+          <speciesReference species="C00001_mt" stoichiometry="1.0" />
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="C00417_mt" stoichiometry="1.0" />
-          <speciesReference species="C00001_mt" stoichiometry="1.0" />
+          
+          <speciesReference species="C00311_mt" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
       <reaction id="R01904" name="Xylitol:NADP+ 4-oxidoreductase (L-xylulose-forming)" reversible="true">
@@ -22855,12 +22741,13 @@
           </html:listOfGenes>
         </notes>
         <listOfReactants>
-          <speciesReference species="C00641" stoichiometry="1.0" />
-          <speciesReference species="C00040" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
+          
           <speciesReference species="C00422" stoichiometry="1.0" />
           <speciesReference species="C00010" stoichiometry="1.0" />
+        </listOfReactants>
+        <listOfProducts>
+<speciesReference species="C00641" stoichiometry="1.0" />
+          <speciesReference species="C00040" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
       <reaction id="R02265" name="(5Z,13E)-(15S)-9alpha,11alpha-Epidioxy-15-hydroxyprosta-5,13-" reversible="false">
@@ -31636,7 +31523,7 @@
           <speciesReference species="C15806" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R03920" name="ATP:D-fructose 6-phosphotransferase" reversible="true">
+      <reaction id="R03920" name="ATP:D-fructose 6-phosphotransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Hk2</html:p>

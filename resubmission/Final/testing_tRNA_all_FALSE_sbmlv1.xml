@@ -649,7 +649,7 @@
       <species id="C00780" name="3-(2-Aminoethyl)-1H-indol-5-ol" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00780_mt" name="3-(2-Aminoethyl)-1H-indol-5-ol_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00785" name="Urocanate" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C00787" name="tRNA(Tyr)" compartment="Extracellular" charge="0" boundaryCondition="true" />
+      <species id="C00787" name="tRNA(Tyr)" compartment="Extracellular" charge="0" boundaryCondition="false" />
       <species id="C00787_mt" name="tRNA(Tyr)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00788" name="L-Adrenaline" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00788_mt" name="L-Adrenaline_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
@@ -846,37 +846,37 @@
       <species id="C01598" name="Melatonin" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C01613" name="Stachyose" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C01628" name="Vitamin K" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C01635" name="tRNA(Ala)" compartment="Extracellular" charge="0" boundaryCondition="true" />
+      <species id="C01635" name="tRNA(Ala)" compartment="Extracellular" charge="0" boundaryCondition="false" />
       <species id="C01635_mt" name="tRNA(Ala)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01636" name="tRNA(Arg)" compartment="Extracellular" charge="0" boundaryCondition="true" />
+      <species id="C01636" name="tRNA(Arg)" compartment="Extracellular" charge="0" boundaryCondition="false" />
       <species id="C01636_mt" name="tRNA(Arg)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01637" name="tRNA(Asn)" compartment="Extracellular" charge="0" boundaryCondition="true" />
+      <species id="C01637" name="tRNA(Asn)" compartment="Extracellular" charge="0" boundaryCondition="false" />
       <species id="C01637_mt" name="tRNA(Asn)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01638" name="tRNA(Asp)" compartment="Extracellular" charge="0" boundaryCondition="true" />
+      <species id="C01638" name="tRNA(Asp)" compartment="Extracellular" charge="0" boundaryCondition="false" />
       <species id="C01638_mt" name="tRNA(Asp)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01639" name="tRNA(Cys)" compartment="Extracellular" charge="0" boundaryCondition="true" />
-      <species id="C01640" name="tRNA(Gln)" compartment="Extracellular" charge="0" boundaryCondition="true" />
+      <species id="C01639" name="tRNA(Cys)" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C01640" name="tRNA(Gln)" compartment="Extracellular" charge="0" boundaryCondition="false" />
       <species id="C01640_mt" name="tRNA(Gln)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01641" name="tRNA(Glu)" compartment="Extracellular" charge="0" boundaryCondition="true" />
+      <species id="C01641" name="tRNA(Glu)" compartment="Extracellular" charge="0" boundaryCondition="false" />
       <species id="C01641_mt" name="tRNA(Glu)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01642" name="tRNA(Gly)" compartment="Extracellular" charge="0" boundaryCondition="true" />
-      <species id="C01643" name="tRNA(His)" compartment="Extracellular" charge="0" boundaryCondition="true" />
+      <species id="C01642" name="tRNA(Gly)" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C01643" name="tRNA(His)" compartment="Extracellular" charge="0" boundaryCondition="false" />
       <species id="C01643_mt" name="tRNA(His)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01644" name="tRNA(Ile)" compartment="Extracellular" charge="0" boundaryCondition="true" />
+      <species id="C01644" name="tRNA(Ile)" compartment="Extracellular" charge="0" boundaryCondition="false" />
       <species id="C01644_mt" name="tRNA(Ile)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01645" name="tRNA(Leu)" compartment="Extracellular" charge="0" boundaryCondition="true" />
+      <species id="C01645" name="tRNA(Leu)" compartment="Extracellular" charge="0" boundaryCondition="false" />
       <species id="C01645_mt" name="tRNA(Leu)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01646" name="tRNA(Lys)" compartment="Extracellular" charge="0" boundaryCondition="true" />
-      <species id="C01647" name="tRNA(Met)" compartment="Extracellular" charge="0" boundaryCondition="true" />
+      <species id="C01646" name="tRNA(Lys)" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C01647" name="tRNA(Met)" compartment="Extracellular" charge="0" boundaryCondition="false" />
       <species id="C01647_mt" name="tRNA(Met)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01648" name="tRNA(Phe)" compartment="Extracellular" charge="0" boundaryCondition="true" />
+      <species id="C01648" name="tRNA(Phe)" compartment="Extracellular" charge="0" boundaryCondition="false" />
       <species id="C01648_mt" name="tRNA(Phe)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01649" name="tRNA(Pro)" compartment="Extracellular" charge="0" boundaryCondition="true" />
-      <species id="C01650" name="tRNA(Ser)" compartment="Extracellular" charge="0" boundaryCondition="true" />
+      <species id="C01649" name="tRNA(Pro)" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C01650" name="tRNA(Ser)" compartment="Extracellular" charge="0" boundaryCondition="false" />
       <species id="C01650_mt" name="tRNA(Ser)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01651" name="tRNA(Thr)" compartment="Extracellular" charge="0" boundaryCondition="true" />
-      <species id="C01652" name="tRNA(Trp)" compartment="Extracellular" charge="0" boundaryCondition="true" />
-      <species id="C01653" name="tRNA(Val)" compartment="Extracellular" charge="0" boundaryCondition="true" />
+      <species id="C01651" name="tRNA(Thr)" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C01652" name="tRNA(Trp)" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C01653" name="tRNA(Val)" compartment="Extracellular" charge="0" boundaryCondition="false" />
       <species id="C01672" name="Cadaverine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C01673" name="Calcitriol" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C01674" name="Chitobiose" compartment="Cytosol" charge="0" boundaryCondition="false" />
@@ -7717,7 +7717,7 @@
           <speciesReference species="C00037" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00375" name="Deoxyadenosine 5'-triphosphate:DNA deoxynucleotidyltransferase" reversible="true">
+      <reaction id="R00375" name="Deoxyadenosine 5'-triphosphate:DNA deoxynucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pola1</html:p>
@@ -7791,7 +7791,7 @@
           <speciesReference species="C00039" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00376" name="Deoxyguanosine 5'-triphosphate:DNA deoxynucleotidyltransferase" reversible="true">
+      <reaction id="R00376" name="Deoxyguanosine 5'-triphosphate:DNA deoxynucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pola1</html:p>
@@ -7865,7 +7865,7 @@
           <speciesReference species="C00039" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00377" name="Deoxycytidine triphosphate:DNA deoxynucleotidyltransferase" reversible="true">
+      <reaction id="R00377" name="Deoxycytidine triphosphate:DNA deoxynucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pola1</html:p>
@@ -7939,7 +7939,7 @@
           <speciesReference species="C00039" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00378" name="Thymidine triphosphate:DNA deoxynucleotidyltransferase" reversible="true">
+      <reaction id="R00378" name="Thymidine triphosphate:DNA deoxynucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pola1</html:p>
@@ -8566,7 +8566,7 @@
           <speciesReference species="C00046" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00437_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="true">
+      <reaction id="R00437_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pnpt1</html:p>
@@ -8585,7 +8585,7 @@
           <speciesReference species="C00008_mt" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00438_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="true">
+      <reaction id="R00438_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pnpt1</html:p>
@@ -8604,7 +8604,7 @@
           <speciesReference species="C00015_mt" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00439_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="true">
+      <reaction id="R00439_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pnpt1</html:p>
@@ -8623,7 +8623,7 @@
           <speciesReference species="C00035_mt" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00440_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="true">
+      <reaction id="R00440_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pnpt1</html:p>

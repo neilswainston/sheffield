@@ -6,44 +6,46 @@
       <compartment id="Cytosol" outside="Extracellular" />
       <compartment id="Mitochondria" outside="Cytosol" />
     </listOfCompartments>
-    <listOfSpecies>
+
+
+	<listOfSpecies>
       <species id="C00001" name="H2O" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00001_ext" name="H2O_ext" compartment="Extracellular" charge="0" boundaryCondition="true" />
-      <species id="C00001_mt" name="H2O_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00001_mt" name="H2O_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00002" name="ATP" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00002_biomass" name="ATP_biomass" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00002_mt" name="ATP_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C00003" name="NAD+" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C00003" name="NAD+" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00003_mt" name="NAD+_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00004" name="NADH" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00004_ext" name="NADH_ext" compartment="Extracellular" charge="0" boundaryCondition="true" />
-      <species id="C00004_ext_mt" name="NADH_ext_mt" compartment="Extracellular" charge="0" boundaryCondition="false" />
-      <species id="C00004_mt" name="NADH_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00004_ext_mt" name="NADH_ext_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00004_mt" name="NADH_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00005" name="NADPH" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00005_mt" name="NADPH_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C00006" name="NADP+" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C00006" name="NADP+" compartment="Cytsol" charge="0" boundaryCondition="false" />
       <species id="C00006_mt" name="NADP+_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00007" name="Oxygen" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00007_ext" name="Oxygen_ext" compartment="Extracellular" charge="0" boundaryCondition="true" />
-      <species id="C00007_mt" name="Oxygen_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00007_mt" name="Oxygen_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00008" name="ADP" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00008_mt" name="ADP_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C00009" name="Orthophosphate" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C00009" name="Orthophosphate" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00009_mt" name="Orthophosphate_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C00010" name="CoA" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C00010" name="CoA" compartment="Cytsol" charge="0" boundaryCondition="false" />
       <species id="C00010_mt" name="CoA_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00011" name="CO2" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00011_ext" name="CO2_ext" compartment="Extracellular" charge="0" boundaryCondition="true" />
-      <species id="C00011_mt" name="CO2_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00011_mt" name="CO2_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00012" name="Peptide" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00013" name="Pyrophosphate" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00013_mt" name="Pyrophosphate_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00014" name="NH3" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00014_ext" name="NH3_ext" compartment="Extracellular" charge="0" boundaryCondition="true" />
-      <species id="C00014_mt" name="NH3_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00014_mt" name="NH3_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00015" name="UDP" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00015_mt" name="UDP_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C00016" name="FAD" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C00016" name="FAD" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00016_mt" name="FAD_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00017" name="Protein" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00018" name="Pyridoxal phosphate" compartment="Cytosol" charge="0" boundaryCondition="false" />
@@ -54,14 +56,14 @@
       <species id="C00021" name="S-Adenosyl-L-homocysteine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00021_mt" name="S-Adenosyl-L-homocysteine_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00022" name="Pyruvate" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C00022_mt" name="Pyruvate_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00022_mt" name="Pyruvate_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00024" name="Acetyl-CoA" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00024_mt" name="Acetyl-CoA_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00025" name="L-Glutamate" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00025_ext" name="L-Glutamate_ext" compartment="Extracellular" charge="0" boundaryCondition="true" />
       <species id="C00025_mt" name="L-Glutamate_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00026" name="2-Oxoglutarate" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C00026_mt" name="2-Oxoglutarate_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00026_mt" name="2-Oxoglutarate_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00027" name="H2O2" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00027_mt" name="H2O2_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00028" name="Acceptor" compartment="Cytosol" charge="0" boundaryCondition="false" />
@@ -75,12 +77,12 @@
       <species id="C00033" name="Acetate" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00033_mt" name="Acetate_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00035" name="GDP" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C00035_mt" name="GDP_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00035_mt" name="GDP_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00036" name="Oxaloacetate" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00036_mt" name="Oxaloacetate_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00037" name="Glycine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00037_ext" name="Glycine_ext" compartment="Extracellular" charge="0" boundaryCondition="true" />
-      <species id="C00037_mt" name="Glycine_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00037_mt" name="Glycine_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00039" name="DNA" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00040" name="Acyl-CoA" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00040_mt" name="Acyl-CoA_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
@@ -92,12 +94,12 @@
       <species id="C00043" name="UDP-N-acetyl-D-glucosamine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00044" name="GTP" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00044_biomass" name="GTP_biomass" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C00044_mt" name="GTP_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00044_mt" name="GTP_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00046" name="RNA" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00046_mt" name="RNA_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00047" name="L-Lysine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00047_ext" name="L-Lysine_ext" compartment="Extracellular" charge="0" boundaryCondition="true" />
-      <species id="C00047_mt" name="L-Lysine_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00047_mt" name="L-Lysine_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00048" name="Glyoxylate" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00049" name="L-Aspartate" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00049_ext" name="L-Aspartate_ext" compartment="Extracellular" charge="0" boundaryCondition="true" />
@@ -141,11 +143,11 @@
       <species id="C00073_ext" name="L-Methionine_ext" compartment="Extracellular" charge="0" boundaryCondition="true" />
       <species id="C00073_mt" name="L-Methionine_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00074" name="Phosphoenolpyruvate" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C00074_mt" name="Phosphoenolpyruvate_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00074_mt" name="Phosphoenolpyruvate_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00075" name="UTP" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00075_biomass" name="UTP_biomass" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00077" name="L-Ornithine" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C00077_mt" name="L-Ornithine_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00077_mt" name="L-Ornithine_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00078" name="L-Tryptophan" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00078_ext" name="L-Tryptophan_ext" compartment="Extracellular" charge="0" boundaryCondition="true" />
       <species id="C00079" name="L-Phenylalanine" compartment="Cytosol" charge="0" boundaryCondition="false" />
@@ -153,7 +155,7 @@
       <species id="C00079_mt" name="L-Phenylalanine_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00080" name="H+" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00080_ext" name="H+_ext" compartment="Extracellular" charge="0" boundaryCondition="true" />
-      <species id="C00080_mt" name="H+_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00080_mt" name="H+_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00081" name="ITP" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00081_mt" name="ITP_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00082" name="L-Tyrosine" compartment="Cytosol" charge="0" boundaryCondition="false" />
@@ -191,7 +193,7 @@
       <species id="C00106" name="Uracil" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00108" name="Anthranilate" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00109" name="2-Oxobutanoate" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C00109_mt" name="2-Oxobutanoate_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00109_mt" name="2-Oxobutanoate_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00111" name="Glycerone phosphate" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00111_mt" name="Glycerone phosphate_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00112" name="CDP" compartment="Cytosol" charge="0" boundaryCondition="false" />
@@ -249,9 +251,9 @@
       <species id="C00147" name="Adenine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00148" name="L-Proline" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00148_ext" name="L-Proline_ext" compartment="Extracellular" charge="0" boundaryCondition="true" />
-      <species id="C00148_mt" name="L-Proline_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00148_mt" name="L-Proline_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00149" name="(S)-Malate" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C00149_mt" name="(S)-Malate_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00149_mt" name="(S)-Malate_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00151" name="L-Amino acid" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00152" name="L-Asparagine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00152_ext" name="L-Asparagine_ext" compartment="Extracellular" charge="0" boundaryCondition="true" />
@@ -263,7 +265,7 @@
       <species id="C00157" name="Phosphatidylcholine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00157_biomass" name="Phosphatidylcholine_biomass" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00158" name="Citrate" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C00158_mt" name="Citrate_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00158_mt" name="Citrate_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00159" name="D-Mannose" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00160" name="Glycolate" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00162" name="Fatty acid" compartment="Cytosol" charge="0" boundaryCondition="false" />
@@ -271,7 +273,7 @@
       <species id="C00163" name="Propanoate" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00163_mt" name="Propanoate_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00164" name="Acetoacetate" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C00164_mt" name="Acetoacetate_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00164_mt" name="Acetoacetate_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00165" name="Diacylglycerol" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00166" name="Phenylpyruvate" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00166_mt" name="Phenylpyruvate_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
@@ -287,7 +289,7 @@
       <species id="C00181" name="D-Xylose" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00183" name="L-Valine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00183_ext" name="L-Valine_ext" compartment="Extracellular" charge="0" boundaryCondition="true" />
-      <species id="C00183_mt" name="L-Valine_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00183_mt" name="L-Valine_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00184" name="Glycerone" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00186" name="(S)-Lactate" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00186_ext" name="(S)-Lactate_ext" compartment="Extracellular" charge="0" boundaryCondition="true" />
@@ -296,7 +298,7 @@
       <species id="C00187_mt" name="Cholesterol_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00188" name="L-Threonine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00188_ext" name="L-Threonine_ext" compartment="Extracellular" charge="0" boundaryCondition="true" />
-      <species id="C00188_mt" name="L-Threonine_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00188_mt" name="L-Threonine_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00189" name="Ethanolamine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00189_ext" name="Ethanolamine_ext" compartment="Extracellular" charge="0" boundaryCondition="true" />
       <species id="C00190" name="UDP-D-xylose" compartment="Cytosol" charge="0" boundaryCondition="false" />
@@ -368,7 +370,7 @@
       <species id="C00279" name="D-Erythrose 4-phosphate" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00280" name="Androst-4-ene-3,17-dione" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00280_mt" name="Androst-4-ene-3,17-dione_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C00283" name="Hydrogen sulfide" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C00283" name="Hydrogen sulfide" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00286" name="dGTP" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00286_biomass" name="dGTP_biomass" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00286_mt" name="dGTP_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
@@ -393,13 +395,13 @@
       <species id="C00312" name="L-Xylulose" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00314" name="Pyridoxine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00315" name="Spermidine" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C00318" name="L-Carnitine" compartment="Extracellular" charge="0" boundaryCondition="false" />
-      <species id="C00318_mt" name="L-Carnitine_mt" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C00318" name="L-Carnitine" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00318_mt" name="L-Carnitine_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00319" name="Sphingosine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00322" name="2-Oxoadipate" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C00322_mt" name="2-Oxoadipate_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00322_mt" name="2-Oxoadipate_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00327" name="L-Citrulline" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C00327_mt" name="L-Citrulline_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00327_mt" name="L-Citrulline_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00328" name="L-Kynurenine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00328_mt" name="L-Kynurenine_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00329" name="D-Glucosamine" compartment="Cytosol" charge="0" boundaryCondition="false" />
@@ -407,7 +409,7 @@
       <species id="C00332" name="Acetoacetyl-CoA" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00332_mt" name="Acetoacetyl-CoA_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00334" name="4-Aminobutanoate" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C00334_mt" name="4-Aminobutanoate_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00334_mt" name="4-Aminobutanoate_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00337" name="(S)-Dihydroorotate" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00337_mt" name="(S)-Dihydroorotate_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00339" name="Long-chain alcohol" compartment="Cytosol" charge="0" boundaryCondition="false" />
@@ -457,7 +459,7 @@
       <species id="C00390_mt" name="Ubiquinol_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00398" name="Tryptamine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00398_mt" name="Tryptamine_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C00399" name="Ubiquinone" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C00399" name="Ubiquinone" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00399_mt" name="Ubiquinone_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00401" name="Chondroitin" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00402" name="D-Aspartate" compartment="Cytosol" charge="0" boundaryCondition="false" />
@@ -475,7 +477,7 @@
       <species id="C00417_mt" name="cis-Aconitate_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00418" name="(R)-Mevalonate" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00422" name="Triacylglycerol" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C00422_biomass" name="Triacylglycerol_biomass" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C00422_biomass" name="Triacylglycerol_biomass" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00425" name="Dehydroascorbate" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00427" name="Prostaglandin H2" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00429" name="5,6-Dihydrouracil" compartment="Cytosol" charge="0" boundaryCondition="false" />
@@ -629,8 +631,8 @@
       <species id="C00705_mt" name="dCDP_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00712" name="(9Z)-Octadecenoic acid" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00712CoA" name="Octadecenoyl-CoA" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C00712CoA_mt" name="Octadecenoyl-CoA_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C00712_biomass" name="(9Z)-Octadecenoic acid_biomass" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C00712CoA_mt" name="Octadecenoyl-CoA_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
+      <species id="C00712_biomass" name="(9Z)-Octadecenoic acid_biomass" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00718" name="Amylose" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00718_biomass" name="Amylose_biomass" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00719" name="Betaine" compartment="Cytosol" charge="0" boundaryCondition="false" />
@@ -649,7 +651,7 @@
       <species id="C00780" name="3-(2-Aminoethyl)-1H-indol-5-ol" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00780_mt" name="3-(2-Aminoethyl)-1H-indol-5-ol_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00785" name="Urocanate" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C00787" name="tRNA(Tyr)" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C00787" name="tRNA(Tyr)" compartment="Cytosol" charge="0" boundaryCondition="true" />
       <species id="C00787_mt" name="tRNA(Tyr)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00788" name="L-Adrenaline" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00788_mt" name="L-Adrenaline_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
@@ -677,8 +679,8 @@
       <species id="C00877_mt" name="Crotonoyl-CoA_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00881" name="Deoxycytidine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00882" name="Dephospho-CoA" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C00886" name="L-Alanyl-tRNA" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C00886_mt" name="L-Alanyl-tRNA_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
+      <species id="C00886" name="L-Alanyl-tRNA(Ala)" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C00886_mt" name="L-Alanyl-tRNA_mt(Ala)" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00894" name="Propenoyl-CoA" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C00894_mt" name="Propenoyl-CoA_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C00899" name="11-cis-Retinol" compartment="Cytosol" charge="0" boundaryCondition="false" />
@@ -846,37 +848,37 @@
       <species id="C01598" name="Melatonin" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C01613" name="Stachyose" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C01628" name="Vitamin K" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C01635" name="tRNA(Ala)" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C01635" name="tRNA(Ala)" compartment="Cytosol" charge="0" boundaryCondition="true" />
       <species id="C01635_mt" name="tRNA(Ala)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01636" name="tRNA(Arg)" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C01636" name="tRNA(Arg)" compartment="Cytosol" charge="0" boundaryCondition="true" />
       <species id="C01636_mt" name="tRNA(Arg)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01637" name="tRNA(Asn)" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C01637" name="tRNA(Asn)" compartment="Cytosol" charge="0" boundaryCondition="true" />
       <species id="C01637_mt" name="tRNA(Asn)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01638" name="tRNA(Asp)" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C01638" name="tRNA(Asp)" compartment="Cytosol" charge="0" boundaryCondition="true" />
       <species id="C01638_mt" name="tRNA(Asp)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01639" name="tRNA(Cys)" compartment="Extracellular" charge="0" boundaryCondition="false" />
-      <species id="C01640" name="tRNA(Gln)" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C01639" name="tRNA(Cys)" compartment="Cytosol" charge="0" boundaryCondition="true" />
+      <species id="C01640" name="tRNA(Gln)" compartment="Cytosol" charge="0" boundaryCondition="true" />
       <species id="C01640_mt" name="tRNA(Gln)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01641" name="tRNA(Glu)" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C01641" name="tRNA(Glu)" compartment="Cytosol" charge="0" boundaryCondition="true" />
       <species id="C01641_mt" name="tRNA(Glu)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01642" name="tRNA(Gly)" compartment="Extracellular" charge="0" boundaryCondition="false" />
-      <species id="C01643" name="tRNA(His)" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C01642" name="tRNA(Gly)" compartment="Cytosol" charge="0" boundaryCondition="true" />
+      <species id="C01643" name="tRNA(His)" compartment="Cytosol" charge="0" boundaryCondition="true" />
       <species id="C01643_mt" name="tRNA(His)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01644" name="tRNA(Ile)" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C01644" name="tRNA(Ile)" compartment="Cytosol" charge="0" boundaryCondition="true" />
       <species id="C01644_mt" name="tRNA(Ile)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01645" name="tRNA(Leu)" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C01645" name="tRNA(Leu)" compartment="Cytosol" charge="0" boundaryCondition="true" />
       <species id="C01645_mt" name="tRNA(Leu)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01646" name="tRNA(Lys)" compartment="Extracellular" charge="0" boundaryCondition="false" />
-      <species id="C01647" name="tRNA(Met)" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C01646" name="tRNA(Lys)" compartment="Cytosol" charge="0" boundaryCondition="true" />
+      <species id="C01647" name="tRNA(Met)" compartment="Cytosol" charge="0" boundaryCondition="true" />
       <species id="C01647_mt" name="tRNA(Met)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01648" name="tRNA(Phe)" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C01648" name="tRNA(Phe)" compartment="Cytosol" charge="0" boundaryCondition="true" />
       <species id="C01648_mt" name="tRNA(Phe)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01649" name="tRNA(Pro)" compartment="Extracellular" charge="0" boundaryCondition="false" />
-      <species id="C01650" name="tRNA(Ser)" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C01649" name="tRNA(Pro)" compartment="Cytosol" charge="0" boundaryCondition="true" />
+      <species id="C01650" name="tRNA(Ser)" compartment="Cytosol" charge="0" boundaryCondition="true" />
       <species id="C01650_mt" name="tRNA(Ser)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01651" name="tRNA(Thr)" compartment="Extracellular" charge="0" boundaryCondition="false" />
-      <species id="C01652" name="tRNA(Trp)" compartment="Extracellular" charge="0" boundaryCondition="false" />
-      <species id="C01653" name="tRNA(Val)" compartment="Extracellular" charge="0" boundaryCondition="false" />
+      <species id="C01651" name="tRNA(Thr)" compartment="Cytosol" charge="0" boundaryCondition="true" />
+      <species id="C01652" name="tRNA(Trp)" compartment="Cytosol" charge="0" boundaryCondition="true" />
+      <species id="C01653" name="tRNA(Val)" compartment="Cytosol" charge="0" boundaryCondition="true" />
       <species id="C01672" name="Cadaverine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C01673" name="Calcitriol" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C01674" name="Chitobiose" compartment="Cytosol" charge="0" boundaryCondition="false" />
@@ -904,7 +906,7 @@
       <species id="C01888" name="Aminoacetone" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C01888_mt" name="Aminoacetone_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C01920_mt" name="Geranoyl-CoA_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
-      <species id="C01931" name="L-Lysyl-tRNA" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C01931" name="L-Lysyl-tRNA(Lys)" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C01943" name="Obtusifoliol" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C01944" name="Octanoyl-CoA" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C01944_mt" name="Octanoyl-CoA_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
@@ -915,8 +917,8 @@
       <species id="C01996" name="Acetylcholine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C02000" name="Alkyl sulfate" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C02035" name="Gibberellin A20" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C02047" name="L-Leucyl-tRNA" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C02047_mt" name="L-Leucyl-tRNA_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
+      <species id="C02047" name="L-Leucyl-tRNA(Leu)" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C02047_mt" name="L-Leucyl-tRNA_mt(Leu)" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C02050" name="Linoleoyl-CoA" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C02051" name="Lipoylprotein" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C02051_mt" name="Lipoylprotein_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
@@ -943,8 +945,8 @@
       <species id="C02232" name="3-Oxoadipyl-CoA" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C02232_mt" name="3-Oxoadipyl-CoA_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C02248" name="Apocytochrome c" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C02282" name="Glutaminyl-tRNA" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C02282_mt" name="Glutaminyl-tRNA_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
+      <species id="C02282" name="Glutaminyl-tRNA(Gln)" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C02282_mt" name="Glutaminyl-tRNA_mt(Gln)" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C02288" name="Insulin dithiol" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C02291" name="L-Cystathionine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C02305" name="Phosphocreatine" compartment="Cytosol" charge="0" boundaryCondition="false" />
@@ -962,8 +964,8 @@
       <species id="C02373_mt" name="4-Methylpentanal_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C02411" name="Glutaconyl-1-CoA" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C02412" name="Glycyl-tRNA(Gly)" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C02430" name="L-Methionyl-tRNA" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C02430_mt" name="L-Methionyl-tRNA_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
+      <species id="C02430" name="L-Methionyl-tRNA(Met)" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C02430_mt" name="L-Methionyl-tRNA_mt(Met)" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C02442" name="N-Methyltyramine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C02465" name="Triiodothyronine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C02470" name="Xanthurenic acid" compartment="Cytosol" charge="0" boundaryCondition="false" />
@@ -1029,7 +1031,7 @@
       <species id="C02988" name="L-Histidyl-tRNA(His)" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C02988_mt" name="L-Histidyl-tRNA(His)_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C02990" name="L-Palmitoylcarnitine" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C02990_mt" name="L-Palmitoylcarnitine_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C02990_mt" name="L-Palmitoylcarnitine_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C02992" name="L-Threonyl-tRNA(Thr)" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C02999" name="N-Acetylmuramoyl-Ala" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C03012" name="Naphthalene-1,2-diol" compartment="Cytosol" charge="0" boundaryCondition="false" />
@@ -1151,7 +1153,7 @@
       <species id="C04072" name="Heparin-glucosamine 3-O-sulfate" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C04073" name="Heparosan-N-sulfate L-iduronate" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C04076" name="L-2-Aminoadipate 6-semialdehyde" compartment="Cytosol" charge="0" boundaryCondition="false" />
-      <species id="C04076_mt" name="L-2-Aminoadipate 6-semialdehyde_mt" compartment="Cytosol" charge="0" boundaryCondition="false" />
+      <species id="C04076_mt" name="L-2-Aminoadipate 6-semialdehyde_mt" compartment="Mitochondria" charge="0" boundaryCondition="false" />
       <species id="C04079" name="N-((R)-Pantothenoyl)-L-cysteine" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C04088" name="Octadecanoyl-[acyl-carrier protein]" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="C04185" name="5,6-Dihydroxyindole-2-carboxylate" compartment="Cytosol" charge="0" boundaryCondition="false" />
@@ -2187,7 +2189,8 @@
       <species id="G13043" name="G13043" compartment="Cytosol" charge="0" boundaryCondition="false" />
       <species id="G13044" name="G13044" compartment="Cytosol" charge="0" boundaryCondition="false" />
     </listOfSpecies>
-    <listOfReactions>
+
+     <listOfReactions>
       <reaction id="EF0001" name="Glucose transporter" reversible="false">
         <notes>
           <html:listOfGenes />
@@ -2820,9 +2823,9 @@
         </notes>
         <listOfReactants>
           <speciesReference species="C00886" stoichiometry="0.6" />
-          <speciesReference species="C06113" stoichiometry="0.359" />
+          <speciesReference species="C02984" stoichiometry="0.359" />
           <speciesReference species="C03402" stoichiometry="0.288" />
-          <speciesReference species="C06112" stoichiometry="0.386" />
+          <speciesReference species="C02987" stoichiometry="0.386" />
           <speciesReference species="C02282" stoichiometry="0.322" />
           <speciesReference species="C02412" stoichiometry="0.538" />
           <speciesReference species="C02702" stoichiometry="0.313" />
@@ -2870,10 +2873,10 @@
         </notes>
         <listOfReactants>
           <speciesReference species="C00886" stoichiometry="0.0585" />
-          <speciesReference species="C06113" stoichiometry="0.0365" />
+          <speciesReference species="C02984" stoichiometry="0.0365" />
           <speciesReference species="C03402" stoichiometry="0.0449" />
-          <speciesReference species="C06112" stoichiometry="0.0518" />
-          <speciesReference species="C02282" stoichiometry="0.04" />
+          <speciesReference species="C02987" stoichiometry="0.0518" />
+          <speciesReference species="C02282" stoichiometry="0.04"/>
           <speciesReference species="C02412" stoichiometry="0.066" />
           <speciesReference species="C02702" stoichiometry="0.0717" />
           <speciesReference species="C02553" stoichiometry="0.1064" />
@@ -2889,7 +2892,7 @@
           <speciesReference species="C02839" stoichiometry="0.0288" />
           <speciesReference species="C03512" stoichiometry="0.0224" />
           <speciesReference species="C02988" stoichiometry="0.0229" />
-          <speciesReference species="C00002" stoichiometry="4.3" />
+          <speciesReference species="C00002" stoichiometry="4.3"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="C_MAB" stoichiometry="1.0" />
@@ -3023,48 +3026,8 @@
           <speciesReference species="C02163_mt" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R03647" name="L-Aspartate:tRNAAsp ligase (AMP-forming)" reversible="false">
-        <notes>
-          <html:listOfGenes>
-            <html:p>ID: Dars</html:p>
-            <html:p>NAME: aspartyl-tRNA synthetase</html:p>
-            <html:p>MMU: 226414</html:p>
-            <html:p>EC: 6.1.1.12</html:p>
-            <html:p>UNIPROT: Q922B2</html:p>
-          </html:listOfGenes>
-        </notes>
-        <listOfReactants>
-          <speciesReference species="C00002" stoichiometry="1.0" />
-          <speciesReference species="C00049" stoichiometry="1.0" />
-          <speciesReference species="C01637" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="C00020" stoichiometry="1.0" />
-          <speciesReference species="C00013" stoichiometry="1.0" />
-          <speciesReference species="C06113" stoichiometry="1.0" />
-        </listOfProducts>
-      </reaction>
-      <reaction id="R03647_mt" name="L-Aspartate:tRNAAsp ligase (AMP-forming)" reversible="false">
-        <notes>
-          <html:listOfGenes>
-            <html:p>ID: Dars2</html:p>
-            <html:p>NAME: aspartyl-tRNA synthetase 2 (mitochondrial)</html:p>
-            <html:p>MMU: 226539</html:p>
-            <html:p>EC: 6.1.1.12</html:p>
-            <html:p>UNIPROT: Q8BIP0</html:p>
-          </html:listOfGenes>
-        </notes>
-        <listOfReactants>
-          <speciesReference species="C00002_mt" stoichiometry="1.0" />
-          <speciesReference species="C00049_mt" stoichiometry="1.0" />
-          <speciesReference species="C01637_mt" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="C00020_mt" stoichiometry="1.0" />
-          <speciesReference species="C00013_mt" stoichiometry="1.0" />
-          <speciesReference species="C06113_mt" stoichiometry="1.0" />
-        </listOfProducts>
-      </reaction>
+      
+      
       <reaction id="R03648" name="L-Asparagine:tRNA(Asn) ligase (AMP-forming)" reversible="false">
         <notes>
           <html:listOfGenes>
@@ -3111,48 +3074,8 @@
           <speciesReference species="C03125" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R03651_mt" name="L-Glutamate:tRNA(Gln) ligase (AMP-forming)" reversible="false">
-        <notes>
-          <html:listOfGenes>
-            <html:p>ID: Ears2</html:p>
-            <html:p>NAME: RIKEN cDNA 3230401I01 gene</html:p>
-            <html:p>MMU: 67417</html:p>
-            <html:p>EC: 6.1.1.17</html:p>
-            <html:p>UNIPROT: Q9CXJ1</html:p>
-          </html:listOfGenes>
-        </notes>
-        <listOfReactants>
-          <speciesReference species="C00002_mt" stoichiometry="1.0" />
-          <speciesReference species="C00025_mt" stoichiometry="1.0" />
-          <speciesReference species="C01640_mt" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="C00020_mt" stoichiometry="1.0" />
-          <speciesReference species="C00013_mt" stoichiometry="1.0" />
-          <speciesReference species="C06112_mt" stoichiometry="1.0" />
-        </listOfProducts>
-      </reaction>
-      <reaction id="R03651" name="L-Glutamate:tRNA(Gln) ligase (AMP-forming)" reversible="false">
-        <notes>
-          <html:listOfGenes>
-            <html:p>ID: Eprs</html:p>
-            <html:p>NAME: glutamyl-prolyl-tRNA synthetase</html:p>
-            <html:p>MMU: 107508</html:p>
-            <html:p>EC: 6.1.1.15 6.1.1.17</html:p>
-            <html:p>UNIPROT: Q8CGC7</html:p>
-          </html:listOfGenes>
-        </notes>
-        <listOfReactants>
-          <speciesReference species="C00002" stoichiometry="1.0" />
-          <speciesReference species="C00025" stoichiometry="1.0" />
-          <speciesReference species="C01640" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="C00020" stoichiometry="1.0" />
-          <speciesReference species="C00013" stoichiometry="1.0" />
-          <speciesReference species="C06112" stoichiometry="1.0" />
-        </listOfProducts>
-      </reaction>
+      
+      
       <reaction id="R03652" name="L-Glutamine:tRNA(Gln) ligase (AMP-forming)" reversible="false">
         <notes>
           <html:listOfGenes>
@@ -3640,50 +3563,8 @@
           <speciesReference species="C00020" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R04212_mt" name="Asp-tRNA(Asn):L-glutamine amido-ligase (ADP-forming)" reversible="false">
-        <notes>
-          <html:listOfGenes>
-            <html:p>ID: Pet112l</html:p>
-            <html:p>NAME: PET112-like (yeast)</html:p>
-            <html:p>MMU: 229487</html:p>
-            <html:p>EC: 6.3.5.-</html:p>
-            <html:p>UNIPROT: Q99JT1</html:p>
-          </html:listOfGenes>
-        </notes>
-        <listOfReactants>
-          <speciesReference species="C06113_mt" stoichiometry="1.0" />
-          <speciesReference species="C00064_mt" stoichiometry="1.0" />
-          <speciesReference species="C00002_mt" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="C03402_mt" stoichiometry="1.0" />
-          <speciesReference species="C00025_mt" stoichiometry="1.0" />
-          <speciesReference species="C00009_mt" stoichiometry="1.0" />
-          <speciesReference species="C00008_mt" stoichiometry="1.0" />
-        </listOfProducts>
-      </reaction>
-      <reaction id="R03905_mt" name="Glu-tRNA(Gln):L-glutamine amido-ligase(ADP-forming)" reversible="false">
-        <notes>
-          <html:listOfGenes>
-            <html:p>ID: Pet112l</html:p>
-            <html:p>NAME: PET112-like (yeast)</html:p>
-            <html:p>MMU: 229487</html:p>
-            <html:p>EC: 6.3.5.-</html:p>
-            <html:p>UNIPROT: Q99JT1</html:p>
-          </html:listOfGenes>
-        </notes>
-        <listOfReactants>
-          <speciesReference species="C06112_mt" stoichiometry="1.0" />
-          <speciesReference species="C00064_mt" stoichiometry="1.0" />
-          <speciesReference species="C00002_mt" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="C02282_mt" stoichiometry="1.0" />
-          <speciesReference species="C00025_mt" stoichiometry="1.0" />
-          <speciesReference species="C00009_mt" stoichiometry="1.0" />
-          <speciesReference species="C00008_mt" stoichiometry="1.0" />
-        </listOfProducts>
-      </reaction>
+      
+      
       <reaction id="R04773_mt" name="Selenomethionine:tRNAMet ligase (AMP-forming)" reversible="false">
         <notes>
           <html:listOfGenes>
@@ -3928,7 +3809,7 @@
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="C02990_mt" stoichiometry="1.0" />
-          <speciesReference species="C00318" stoichiometry="1.0" />
+          <speciesReference species="C00487" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
       <reaction id="TF0017" name="Valine mTransporter" reversible="true">
@@ -7717,7 +7598,7 @@
           <speciesReference species="C00037" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00375" name="Deoxyadenosine 5'-triphosphate:DNA deoxynucleotidyltransferase" reversible="true">
+      <reaction id="R00375" name="Deoxyadenosine 5'-triphosphate:DNA deoxynucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pola1</html:p>
@@ -7791,7 +7672,7 @@
           <speciesReference species="C00039" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00376" name="Deoxyguanosine 5'-triphosphate:DNA deoxynucleotidyltransferase" reversible="true">
+      <reaction id="R00376" name="Deoxyguanosine 5'-triphosphate:DNA deoxynucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pola1</html:p>
@@ -7865,7 +7746,7 @@
           <speciesReference species="C00039" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00377" name="Deoxycytidine triphosphate:DNA deoxynucleotidyltransferase" reversible="true">
+      <reaction id="R00377" name="Deoxycytidine triphosphate:DNA deoxynucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pola1</html:p>
@@ -7939,7 +7820,7 @@
           <speciesReference species="C00039" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00378" name="Thymidine triphosphate:DNA deoxynucleotidyltransferase" reversible="true">
+      <reaction id="R00378" name="Thymidine triphosphate:DNA deoxynucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pola1</html:p>
@@ -8566,7 +8447,7 @@
           <speciesReference species="C00046" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00437_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="true">
+      <reaction id="R00437_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pnpt1</html:p>
@@ -8585,7 +8466,7 @@
           <speciesReference species="C00008_mt" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00438_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="true">
+      <reaction id="R00438_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pnpt1</html:p>
@@ -8604,7 +8485,7 @@
           <speciesReference species="C00015_mt" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00439_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="true">
+      <reaction id="R00439_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pnpt1</html:p>
@@ -8623,7 +8504,7 @@
           <speciesReference species="C00035_mt" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
-      <reaction id="R00440_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="true">
+      <reaction id="R00440_mt" name="Polyribonucleotide:orthophosphate nucleotidyltransferase" reversible="false">
         <notes>
           <html:listOfGenes>
             <html:p>ID: Pnpt1</html:p>
@@ -15897,11 +15778,12 @@
           </html:listOfGenes>
         </notes>
         <listOfReactants>
-          <speciesReference species="C00422" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
           <speciesReference species="C00116" stoichiometry="1.0" />
           <speciesReference species="C00162" stoichiometry="1.0" />
+        </listOfReactants>
+        <listOfProducts>
+<speciesReference species="C00422" stoichiometry="1.0" />
+          
         </listOfProducts>
       </reaction>
       <reaction id="R01351" name="Glycerol-ester acylhydrolase" reversible="false">
@@ -18416,12 +18298,12 @@
           </html:listOfGenes>
         </notes>
         <listOfReactants>
-          <speciesReference species="C00668" stoichiometry="1.0" />
-          <speciesReference species="C00001" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
           <speciesReference species="C00267" stoichiometry="1.0" />
           <speciesReference species="C00009" stoichiometry="1.0" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00668" stoichiometry="1.0" />
+          <speciesReference species="C00001" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
       <reaction id="R01791" name="Dextrin 6-alpha-D-glucanohydrolase" reversible="false">
@@ -19621,7 +19503,7 @@
         </notes>
         <listOfReactants>
           <speciesReference species="C00154" stoichiometry="1.0" />
-          <speciesReference species="C00318" stoichiometry="1.0" />
+          <speciesReference species="C00487" stoichiometry="1.0" />
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="C00010" stoichiometry="1.0" />
@@ -22855,12 +22737,13 @@
           </html:listOfGenes>
         </notes>
         <listOfReactants>
-          <speciesReference species="C00641" stoichiometry="1.0" />
-          <speciesReference species="C00040" stoichiometry="1.0" />
-        </listOfReactants>
-        <listOfProducts>
+          
           <speciesReference species="C00422" stoichiometry="1.0" />
           <speciesReference species="C00010" stoichiometry="1.0" />
+        </listOfReactants>
+        <listOfProducts>
+<speciesReference species="C00641" stoichiometry="1.0" />
+          <speciesReference species="C00040" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
       <reaction id="R02265" name="(5Z,13E)-(15S)-9alpha,11alpha-Epidioxy-15-hydroxyprosta-5,13-" reversible="false">
@@ -41298,7 +41181,7 @@
           <speciesReference species="G00023" stoichiometry="1.0" />
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="G10619" stoichiometry="1.0" />
+          <speciesReference species="C00015" stoichiometry="1.0" />
           <speciesReference species="G00028" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
@@ -41422,7 +41305,7 @@
           <speciesReference species="G00028" stoichiometry="1.0" />
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="G10619" stoichiometry="1.0" />
+          <speciesReference species="C00015" stoichiometry="1.0" />
           <speciesReference species="G00029" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
@@ -42759,7 +42642,7 @@
           <speciesReference species="G00171" stoichiometry="1.0" />
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="C00031" stoichiometry="1.0" />
+          <speciesReference species="C00267" stoichiometry="1.0" />
           <speciesReference species="G00010" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
@@ -42778,7 +42661,7 @@
           <speciesReference species="G00010" stoichiometry="1.0" />
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="C00031" stoichiometry="1.0" />
+          <speciesReference species="C00267" stoichiometry="1.0" />
           <speciesReference species="G00011" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
@@ -52761,7 +52644,7 @@
           <speciesReference species="G00031" stoichiometry="1.0" />
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="G10619" stoichiometry="1.0" />
+          <speciesReference species="C00015" stoichiometry="1.0" />
           <speciesReference species="G00032" stoichiometry="1.0" />
         </listOfProducts>
       </reaction>
