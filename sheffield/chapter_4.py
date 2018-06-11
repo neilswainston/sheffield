@@ -11,12 +11,14 @@ def prelim_analysis(filename):
     model = _get_model(filename)
 
     # Fix glucose uptake to 0, 1, 10 and maximise:
+    _fix_glucose_maximise(model, None, 'Max biomass')
     _fix_glucose_maximise(model, 0, 'Max biomass, glc_uptake = 0')
     _fix_glucose_maximise(model, 1, 'Max biomass, glc_uptake = 1')
     _fix_glucose_maximise(model, 10, 'Max biomass, glc_uptake = 10')
 
     # Add mAb production to objective function and maximise:
     model.reactions.BIO029.objective_coefficient = 1
+    _fix_glucose_maximise(model, None, 'Max biomass and mAb')
     _fix_glucose_maximise(model, 0, 'Max biomass and mAb, glc_uptake = 0')
     _fix_glucose_maximise(model, 1, 'Max biomass and mAb, glc_uptake = 1')
     _fix_glucose_maximise(model, 10, 'Max biomass and mAb, glc_uptake = 10')
@@ -79,9 +81,10 @@ def _fix_glucose_maximise(model, glc_bound, title,
                           names=True, print_result=True):
     '''Fix glucose uptake flux and maximise.'''
     # Fix glucose uptake to glc_bound:
-    glc_transport = model.reactions.EF0001
-    glc_transport.lower_bound = glc_bound
-    glc_transport.upper_bound = glc_bound
+    if glc_bound is not None:
+        glc_transport = model.reactions.EF0001
+        glc_transport.lower_bound = glc_bound
+        glc_transport.upper_bound = glc_bound
 
     # Optimise:
     solution = model.optimize()
