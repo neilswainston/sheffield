@@ -8,6 +8,7 @@ from cobra.flux_analysis import flux_variability_analysis
 
 
 def prelim_analysis(filename):
+    '''Preliminary analysis.'''
     model = _get_model(filename)
 
     # Fix glucose uptake to 0, 1, 10 and maximise:
@@ -29,6 +30,7 @@ def prelim_analysis(filename):
 
 
 def blocked_reactions(filename):
+    '''Analyse blocked reactions.'''
     model = _get_model(filename)
 
     # Perform FVA:
